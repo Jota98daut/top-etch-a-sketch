@@ -9,12 +9,39 @@
   <body>
     <div id="outer-container" class="flex-column">
       <div id="inner-container" class="flex-column">
-        <form>
+        <form id="board-generator">
           <label for="size">Board size</label>
           <input id="size" name="size" type="number" value=16>
-          <button id="size-submit" type="submit">Submit</button>
+          <button id="size-submit" type="submit">Reset</button>
         </form>
         <div id="display"></div>
+        <div id="selectors">
+          <div id="color-selector">
+            <label style="margin-right: 5px;">color</label>
+            <div id="colors-container">
+              <div class="color" id="black"></div>
+              <div class="color" id="silver"></div>
+              <div class="color" id="gray"></div>
+              <div class="color" id="maroon"></div>
+              <div class="color" id="red"></div>
+              <div class="color" id="purple"></div>
+              <div class="color" id="fuchsia"></div>
+              <div class="color" id="green"></div>
+              <div class="color" id="lime"></div>
+              <div class="color" id="olive"></div>
+              <div class="color" id="yellow"></div>
+              <div class="color" id="navy"></div>
+              <div class="color" id="blue"></div>
+              <div class="color" id="teal"></div>
+              <div class="color" id="aqua"></div>
+            </div>
+          </div>
+          <div id="opacity-selector">
+            <label style="margin-right: 5px" for="opacity">opacity</label>
+            <input id="opacity" name="opacity" type="range" min=0 max=1 step=0.1 value=0.5>
+            <output id="rangevalue">0.5</output>
+          </div>
+        </div>
       </div>
     </div>
   </body>
